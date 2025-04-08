@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Power Generator</title>
+</head>
+
+<style>
+    h2 {
+        font-family: arial;
+    }
+        h1 {
+        font-family: arial;
+    }
+</style>
+<body>
+    <h1>Crazy Power Generator</h1>
+
+    <button onclick="generate()" style="border: 3px double black; font-size: 3vw; color: black;">
+        Give me a power!
+    </button>
+
+    <h2 id="powerName">Superpower || </h2>
+    <h2 id="proficiency">Proficiency || </h2>
+    <h2 id="speed">Speed || </h2>
+    <h2 id="strength">Strength || </h2>
+    <h2 id="weakness">Intelligence || </h2>
+
+    <script>
+        function generate() {
+            // Utility function to generate random numbers in the range [1, 10]
+            function getRandomInt(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            // List of random superpowers
+            const superpowers = [
+                "Invisibility",
+                "Super Strength",
+                "Telekinesis",
+                "Flight",
+                "Time Manipulation",
+                "Shape-Shifting",
+                "Mind Reading",
+                "Teleportation",
+                "Energy Blasts",
+                "Healing Factor",
+                "Glute Manipulation",
+                "Energy Manipulation",
+                "Infinite Rizz",
+                "Carving",
+                "Light Control",
+                "Anti-Magic",
+                "Pyrokinesis",
+                "Ego-fueled power",
+                "Nothing, Loser.",
+                "Animal Control",
+                "Language Proficiency",
+                "Magnetism",
+                "Ice Touch",
+                "Laser Eyes",
+                "Weight Control",
+                "Persuasion",
+                "Stealth",
+                "Cloning",
+                "Melting Touch",
+                "Size Control",
+                "Weather Control",
+            ];
+
+            // Generate random superpower
+            const randomPower = superpowers[getRandomInt(0, superpowers.length - 1)];
+
+            // Assign random values to each section
+            document.getElementById("powerName").innerHTML = "Superpower || " + randomPower;
+            document.getElementById("proficiency").innerHTML = "Proficiency || " + getRandomInt(1, 10);
+            document.getElementById("speed").innerHTML = "Speed || " + getRandomInt(1, 10);
+            document.getElementById("strength").innerHTML = "Strength || " + getRandomInt(1, 10);
+            document.getElementById("weakness").innerHTML = "Intelligence || " + getRandomInt(1, 10);
+        }
+    </script>
+</body>
+</html>
