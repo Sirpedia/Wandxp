@@ -1,0 +1,15 @@
+<html>
+<h1>global page-opened counter</h1> 
+<h1 id="counter">global page-opened counter</h1>  
+<script src="https://kihtrak.com/cloud_variable/cloudify.min.js"></script>
+<script>
+cloud_counter = cloud_counter + 1 || 0
+
+number = document.getElementById("counter") 
+function update() {
+    number.innerHTML = cloud_counter
+}
+setInterval(update,1000)
+</script>
+    
+</html>
