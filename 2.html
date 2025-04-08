@@ -1,0 +1,22 @@
+<html>
+    <h1>factorial calculator</h1>
+    <input id="digit">
+
+
+    <button onclick="solve()">factorialize!</button>
+    <h1 id="factorial"></h1>
+    
+    <script>
+    function solve() {
+        factor = parseInt(document.getElementById("digit").value)
+        let factorialvalue = factor
+        while (factorialvalue > 1) {
+        factorialvalue = factorialvalue - 1
+        factor = factor * (factorialvalue)
+        }
+        document.getElementById("factorial").innerHTML = factor.toPrecision()
+    }
+        
+        
+    </script>
+</html>
