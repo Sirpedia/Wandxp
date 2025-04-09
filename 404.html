@@ -1,5 +1,29 @@
 <html>
-    <h1 id="thing">hi</h1>
+       <link href="https://fonts.googleapis.com/css?family=Schoolbell&v1" rel="stylesheet">
+   <style>
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+p {
+    font-family: 'Schoolbell', arial, serif; 
+}  
+       
+       
+   </style>
+   
+   <div style="background-color: #FFEEFF; margin: 25vw;word-wrap: break-word; height: 50vw; font-size: 5vw; padding-left: 2vw;box-shadow: 1vw 1vw 1vw rgba(0,0,0,0.1); border-radius: 1vw; animation: myAnim 2s ease 0s 1 normal forwards;">
+    <p id="thing"></p>
+  
+    </div>
     <script>
 let text = window.location.href;
 let result = text.substring(34);
