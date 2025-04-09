@@ -3,8 +3,9 @@
     <script>
 let text = window.location.href;
 let result = text.substring(34);
+let newresult = result.replace("%20", " ");
 
-document.getElementById("thing").innerHTML = result;
+document.getElementById("thing").innerHTML = newresult;
 </script>
     
 
