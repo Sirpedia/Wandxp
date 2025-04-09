@@ -1,0 +1,73 @@
+<html>
+       <link href="https://fonts.googleapis.com/css?family=Schoolbell&v1" rel="stylesheet">
+   <style>
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+p {
+    font-family: 'Schoolbell', arial, serif; 
+    color: #FFDDFF;
+    font-size: 6vw;
+    text-align: center;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}  
+input {
+    font-family: 'Schoolbell', arial, serif; 
+    color: #FFDDFF;
+    font-size: 6vw;
+margin-left: 20vw;
+margin-left: 20vw;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+outline: none;
+       border: 0 solid black;
+      text-align: center;
+
+}  
+  button {
+    font-family: 'Schoolbell', arial, serif; 
+    color: #FFDDFF;
+    font-size: 6vw;
+margin-left: 50vw;
+margin-left: 40vw;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+outline: none;
+       border: 0 solid black;
+       border-radius: 2vw;
+       
+      
+
+}       
+       
+   </style>
+   
+   <p> °❀⋆.ೃ࿔*: ･loveknotes ᯓᡣ𐭩</p>
+   <input id="input" autofocus>
+    <button onclick="myFunction()">copy link!</button>
+<script>
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("input");
+
+  // Select the text field
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText("https://sirpedia.github.io/loveknotes/" + copyText.value );
+
+  // Alert the copied text
+  alert("Loveknote Link Copied!");
+}
+    
+    
+</script>
+</html>
