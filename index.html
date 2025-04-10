@@ -60,9 +60,9 @@ function myFunction() {
   // Select the text field
   copyText.select(); 
   copyText.setSelectionRange(0, 99999); // For mobile devices
-
+		copyText.value
    // Copy the text inside the text field
-  navigator.clipboard.writeText("https://sirpedia.github.io/loveknotes/" + copyText.value );
+  navigator.clipboard.writeText("https://sirpedia.github.io/loveknotes/" + copyText.value.replaceAll(" ","%20"));
 
   // Alert the copied text
   alert("Loveknote Link Copied!");
